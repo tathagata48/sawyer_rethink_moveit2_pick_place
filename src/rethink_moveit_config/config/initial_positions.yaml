@@ -1,0 +1,11 @@
+# Default initial positions for sawyer's ros2_control fake system
+
+initial_positions:
+  right_gripper_l_finger_joint: 0
+  right_j0: 0
+  right_j1: 0
+  right_j2: 0
+  right_j3: 0
+  right_j4: 0
+  right_j5: 0
+  right_j6: 0

@@ -1,0 +1,26 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: sawyer_description
+    relative_path: urdf/sawyer.urdf.xacro
+    xacro_args: electric_gripper:=true
+  srdf:
+    relative_path: config/sawyer.srdf
+  package_settings:
+    author_name: Tathagata Chowdhury
+    author_email: tathagatachowdhury23@outlook.com
+    generated_timestamp: 1790936044
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

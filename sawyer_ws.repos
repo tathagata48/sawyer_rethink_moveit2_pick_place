@@ -1,0 +1,17 @@
+# Upstream sources for the Sawyer workspace.
+#
+#   vcs import src < sawyer_ws.repos
+#   ./port_catkin_descriptions.sh
+#
+# Both are ROS 1 catkin repositories; the port script converts the description
+# packages to ament_cmake in place and marks the rest with COLCON_IGNORE.
+# Pinned to the commits this workspace was built and tested against.
+repositories:
+  sawyer_robot:
+    type: git
+    url: https://github.com/RethinkRobotics/sawyer_robot.git
+    version: d1ef3d0ca83d0a943839783efd9b162e6930f2b7   # v5.3.0-1-gd1ef3d0
+  intera_common:
+    type: git
+    url: https://github.com/RethinkRobotics/intera_common.git
+    version: a298fec02b8300e23841085a73c2039261c3d43c   # v5.3.0
