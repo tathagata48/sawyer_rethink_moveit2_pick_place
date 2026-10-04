@@ -53,7 +53,7 @@ the table.
 
 ```mermaid
 flowchart LR
-    PP["<b>pick_place</b><br/>MoveGroupInterface<br/>PlanningSceneInterface"]
+    PP["pick_place<br/>MoveGroupInterface<br/>PlanningSceneInterface"]
 
     subgraph moveit["move_group"]
         direction TB
@@ -75,7 +75,7 @@ flowchart LR
     RVIZ["RViz2"]
 
     PP -->|plan / execute| moveit
-    PP -->|collision &amp; attached objects| PSM
+    PP -->|collision and attached objects| PSM
     moveit -->|FollowJointTrajectory| AC
     moveit -->|FollowJointTrajectory| GC
     AC --> HW
